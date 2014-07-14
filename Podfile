@@ -1,29 +1,21 @@
 platform :ios, '7.0'
-pod 'AFNetworking', '~> 2.1.0'
-pod 'RESideMenu', '~> 3.4'
+pod 'AFNetworking'
+pod 'RESideMenu'
 pod 'Hpple', :git => 'https://github.com/topfunky/hpple.git'
 pod 'MBProgressHUD'
-pod 'SVPullToRefresh'
-pod 'SDWebImage'
-pod 'HMSegmentedControl', '~> 1.3.0'
-pod 'Masonry'
-pod 'FMDB'
-pod 'DDPageControl'
 pod 'DTCoreText'
-#pod 'MultiLayerNavigation', :git => 'https://github.com/myoula/MultiLayerNavigation.git'
 
-#JLRubyChina
-#pod 'Nimbus', '~> 1.0.0'
-#pod 'MTStatusBarOverlay'
-#pod 'PPRevealSideViewController'
-#pod 'SSKeychain'
-#pod 'HPGrowingTextView'
-#pod 'SDSegmentedControl'
-#pod 'NSStringEmojize'
-#pod 'LTUpdate', '~> 0.0.2'
-#pod 'RTagCloudView'
-#pod 'NSAttributedStringMarkdownParser', '~> 0.0.1'
-
-target :Tests do
-    pod 'GHUnit'
+post_install do |installer|
+  File.open("#{installer.sandbox_root}/Headers/module.map", 'w') do |fp|
+    installer.pods.each do |pod|
+      normalized_pod_name = pod.name.gsub('-', '')
+      fp.write <<EOF
+module #{normalized_pod_name} [system] {
+  umbrella "#{pod.name}"
+  export *
+}
+EOF
+      puts "Generating Swift Module #{normalized_pod_name.green} for #{pod} OK!"
+    end
+  end
 end
