@@ -4,7 +4,7 @@ V2EX iOS Client
 The iOS client for V2EX.
 
 ## What is V2EX?
-V2EX is a community of start-ups, designers, developers and creative people, created by @livid. We all appreciate that he contributes a lot for it.
+V2EX is a community of start-ups, designers, developers and creative people, created by [@Livid](https://github.com/livid). We all appreciate that he contributes a lot for it.
 
 ## Swift Work!
 Now I'm working on creating a new branch using the wonderful Swift!
