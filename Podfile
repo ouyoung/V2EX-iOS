@@ -1,6 +1,6 @@
 platform :ios, '7.0'
-pod 'AFNetworking'
-pod 'RESideMenu'
+pod 'AFNetworking' 
+pod 'RESideMenu', '~> 4.0.5'
 pod 'Hpple', :git => 'https://github.com/topfunky/hpple.git'
 pod 'MBProgressHUD'
 pod 'DTCoreText'
