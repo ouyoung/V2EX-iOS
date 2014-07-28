@@ -16,8 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-        // Override point for customization after application launch.
+
+        self.setNavigationBarAppearance()
+        UIFont.familyNames()
         return true
+    }
+    
+    private func setNavigationBarAppearance(){
+        var names = UIFont.familyNames() as Array
+        
+        println(names.count)
+        
+        for family in names  {
+            NSLog("%@", family as String)
+            
+            for name in UIFont.fontNamesForFamilyName(family as String) {
+                println(name as String)
+            }
+        }
+        
+        
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().barTintColor = UIColor(red: 74/255.0, green: 135/255.0, blue: 238/255.0, alpha: 0.1)
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name: "SourceHanSansCN-Normal", size: 22.0),
+        ]
     }
 
     func applicationWillResignActive(application: UIApplication!) {

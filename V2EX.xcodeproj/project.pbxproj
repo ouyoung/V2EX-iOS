@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E3B8A001974282200CA7923 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3B89FF1974282200CA7923 /* SideMenuController.swift */; };
-		5E3B8A021974289700CA7923 /* SelfUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3B8A011974289700CA7923 /* SelfUserController.swift */; };
+		5E3B8A021974289700CA7923 /* V2EXSelfUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3B8A011974289700CA7923 /* V2EXSelfUserController.swift */; };
+		5E4CFDCC1984ABB5007C1151 /* V2EXMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CFDCB1984ABB5007C1151 /* V2EXMenuViewController.swift */; };
+		5E4CFDCE1984AD34007C1151 /* V2EXRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CFDCD1984AD34007C1151 /* V2EXRootViewController.swift */; };
+		5E4CFDD01984AD8F007C1151 /* V2EXMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4CFDCF1984AD8F007C1151 /* V2EXMainViewController.swift */; };
+		5E6C56CA1985F964003E65B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E6C56CC1985F964003E65B7 /* Localizable.strings */; };
+		5E6C56CF1985FD92003E65B7 /* V2EXHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C56CE1985FD92003E65B7 /* V2EXHomeController.swift */; };
 		5EC064091973648500530D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC064081973648500530D2C /* AppDelegate.swift */; };
 		5EC0640C1973648500530D2C /* V2EX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0640A1973648500530D2C /* V2EX.xcdatamodeld */; };
-		5EC0640E1973648500530D2C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0640D1973648500530D2C /* RootViewController.swift */; };
+		5EC0640E1973648500530D2C /* V2EXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0640D1973648500530D2C /* V2EXNavigationController.swift */; };
 		5EC064111973648500530D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC0640F1973648500530D2C /* Main.storyboard */; };
 		5EC064131973648500530D2C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC064121973648500530D2C /* Images.xcassets */; };
 		5EC0641F1973648500530D2C /* V2EXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0641E1973648500530D2C /* V2EXTests.swift */; };
@@ -31,13 +35,19 @@
 /* Begin PBXFileReference section */
 		3E2C47B1031D4AE6BB7DD229 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		419CFC7A384F4130A9BC8687 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E3B89FF1974282200CA7923 /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
-		5E3B8A011974289700CA7923 /* SelfUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfUserController.swift; sourceTree = "<group>"; };
+		5E3B8A011974289700CA7923 /* V2EXSelfUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXSelfUserController.swift; sourceTree = "<group>"; };
+		5E4CFDCB1984ABB5007C1151 /* V2EXMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMenuViewController.swift; sourceTree = "<group>"; };
+		5E4CFDCD1984AD34007C1151 /* V2EXRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXRootViewController.swift; sourceTree = "<group>"; };
+		5E4CFDCF1984AD8F007C1151 /* V2EXMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXMainViewController.swift; sourceTree = "<group>"; };
+		5E4CFE9D1984D78F007C1151 /* V2EX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V2EX-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E6C56CB1985F964003E65B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E6C56CD1985F968003E65B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5E6C56CE1985FD92003E65B7 /* V2EXHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2EXHomeController.swift; sourceTree = "<group>"; };
 		5EC064031973648500530D2C /* V2EX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2EX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC064071973648500530D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC064081973648500530D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC0640B1973648500530D2C /* V2EX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = V2EX.xcdatamodel; sourceTree = "<group>"; };
-		5EC0640D1973648500530D2C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5EC0640D1973648500530D2C /* V2EXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXNavigationController.swift; sourceTree = "<group>"; };
 		5EC064101973648500530D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EC064121973648500530D2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EC064181973648500530D2C /* V2EXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V2EXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,11 +77,29 @@
 		5E3B89FE1974272E00CA7923 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5EC0640D1973648500530D2C /* RootViewController.swift */,
-				5E3B89FF1974282200CA7923 /* SideMenuController.swift */,
-				5E3B8A011974289700CA7923 /* SelfUserController.swift */,
+				5E4CFEA21984F5C0007C1151 /* Abstracts */,
+				5EC0640D1973648500530D2C /* V2EXNavigationController.swift */,
+				5E3B8A011974289700CA7923 /* V2EXSelfUserController.swift */,
+				5E4CFDCB1984ABB5007C1151 /* V2EXMenuViewController.swift */,
+				5E4CFDCD1984AD34007C1151 /* V2EXRootViewController.swift */,
+				5E6C56CE1985FD92003E65B7 /* V2EXHomeController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E4CFDC819849454007C1151 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5E4CFEA21984F5C0007C1151 /* Abstracts */ = {
+			isa = PBXGroup;
+			children = (
+				5E4CFDCF1984AD8F007C1151 /* V2EXMainViewController.swift */,
+			);
+			path = Abstracts;
 			sourceTree = "<group>";
 		};
 		5EC063FA1973648400530D2C = {
@@ -97,12 +125,14 @@
 		5EC064051973648500530D2C /* V2EX */ = {
 			isa = PBXGroup;
 			children = (
+				5E4CFDC819849454007C1151 /* Helpers */,
 				5E3B89FE1974272E00CA7923 /* Controllers */,
 				5EC064081973648500530D2C /* AppDelegate.swift */,
 				5EC0640F1973648500530D2C /* Main.storyboard */,
 				5EC064121973648500530D2C /* Images.xcassets */,
 				5EC0640A1973648500530D2C /* V2EX.xcdatamodeld */,
 				5EC064061973648500530D2C /* Supporting Files */,
+				5E4CFE9D1984D78F007C1151 /* V2EX-Bridging-Header.h */,
 			);
 			path = V2EX;
 			sourceTree = "<group>";
@@ -111,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				5EC064071973648500530D2C /* Info.plist */,
+				5E6C56CC1985F964003E65B7 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5EC063FA1973648400530D2C;
 			productRefGroup = 5EC064041973648500530D2C /* Products */;
@@ -223,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC064111973648500530D2C /* Main.storyboard in Resources */,
+				5E6C56CA1985F964003E65B7 /* Localizable.strings in Resources */,
 				5EC064131973648500530D2C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3B8A021974289700CA7923 /* SelfUserController.swift in Sources */,
-				5EC0640E1973648500530D2C /* RootViewController.swift in Sources */,
-				5E3B8A001974282200CA7923 /* SideMenuController.swift in Sources */,
+				5E4CFDD01984AD8F007C1151 /* V2EXMainViewController.swift in Sources */,
+				5E6C56CF1985FD92003E65B7 /* V2EXHomeController.swift in Sources */,
+				5E4CFDCC1984ABB5007C1151 /* V2EXMenuViewController.swift in Sources */,
+				5E3B8A021974289700CA7923 /* V2EXSelfUserController.swift in Sources */,
+				5EC0640E1973648500530D2C /* V2EXNavigationController.swift in Sources */,
+				5E4CFDCE1984AD34007C1151 /* V2EXRootViewController.swift in Sources */,
 				5EC0640C1973648500530D2C /* V2EX.xcdatamodeld in Sources */,
 				5EC064091973648500530D2C /* AppDelegate.swift in Sources */,
 			);
@@ -301,6 +337,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5E6C56CC1985F964003E65B7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6C56CB1985F964003E65B7 /* Base */,
+				5E6C56CD1985F968003E65B7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		5EC0640F1973648500530D2C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,9 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V2EX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V2EX/V2EX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -409,9 +458,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V2EX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V2EX/V2EX-Bridging-Header.h";
 			};
 			name = Release;
 		};
